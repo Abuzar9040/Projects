@@ -14,7 +14,7 @@ MyCalc(){
 l1=new Label(); 
 l1.setBackground(Color.LIGHT_GRAY);
 l1.setBounds(50,50,260,60);
-
+ 
 
 b1=new Button("1");
   b1.setBounds(50,340,50,50);
@@ -57,7 +57,7 @@ bcalc=new Button("=");
   bcalc.setBounds(245,410,65,50);
 bclr=new Button("CE"); 
   bclr.setBounds(50,130,65,50);
-
+  
 
 b1.addActionListener(this); 
 b2.addActionListener(this);  
@@ -95,7 +95,7 @@ f.setSize(360,500);
 f.setLayout(null);  
 f.setVisible(true);  
 } 
-                     //FOR CLOSING THE WINDOW
+                     //FOR CLOSING THW WINDOW
 public void windowClosing(WindowEvent e) {
   f.dispose();
 }
@@ -184,7 +184,7 @@ if(e.getSource()==badd){                     //FOR ADDITION
   l1.setText(z);
   check=1;
 }
-if(e.getSource()==bsub){                    //FOR SUBTRACTION
+if(e.getSource()==bsub){                    //FOR SUBTRACTIOM
   try{
     num1=Double.parseDouble(l1.getText());
     }catch(NumberFormatException f){
@@ -206,7 +206,7 @@ if(e.getSource()==bmult){                   //FOR MULTIPLICATION
   l1.setText(z);
   check=3;
 }
-if(e.getSource()==bdiv){                   //FOR DIVISION
+if(e.getSource()==bdiv){                   //FOR DIVISIOM
   try{
     num1=Double.parseDouble(l1.getText());
     }catch(NumberFormatException f){
@@ -256,10 +256,8 @@ if(e.getSource()==bclr){
   xd=0;
    z="";
    l1.setText(z);
-   } 
-
+}
 }  
-//MAIN METHOD where objects of MyCalc is instantaiated
  public static void main(String args[]){  
        new MyCalc();  
    }
