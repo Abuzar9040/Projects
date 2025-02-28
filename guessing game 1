@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+import java.util.Random;
+
+public class guessingGame1
+
+{
+
+static int numRandom()//custom function numRandom()
+
+{
+
+Random generator=new Random();
+
+int numRandom=generator.nextInt(100)+1;
+
+return numRandom;
+
+}
+
+public static void main(String[] str)
+
+{
+
+//Variable Declaration//
+
+int numRandom;
+
+int numGuess1;
+
+int numGuess2;
+
+int numGuess3;
+
+String display1=” !!!You guessed it right!!!”;
+
+String display2=” !!!Sorry, that is not correct!!!”;
+
+String display3=”     The correct number is “;
+
+String greeting1=”             !!!Welcome to the Guessing Game!!!”;
+
+String greeting2=”  !!!Where you get 3 chances to guess a number from 1 to 100 and see if you’re right!!!”;
+
+String prompt1=” Would you like to play?”;
+
+String choice1=” 1. Yes”;
+
+String choice2=” 2. No”;
+
+String prompt2=” Please enter a number 1 to 100:  “;
+
+String second=” Please enter your second quess:  “;
+
+String last=” Please enter your final guess:  “;
+
+String prompt3=” Would you like to play again?”;
+
+String goodbye1=”     !!!Goodbye!!!”;
+
+String goodbye2=”     !!!  Thanks for playing!!!”;
+
+int reply=0;
